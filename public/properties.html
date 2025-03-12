@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emlaklar - Remax Pupa Emlak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl">Remax Pupa Emlak</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="properties.html">Emlaklar</a>
+                <a href="agents.html">Danışmanlar</a>
+                <a href="about.html">Hakkımızda</a>
+                <a href="contact.html">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-4 py-8">
+            <h1 class="text-3xl font-bold mb-4">Emlak Listesi</h1>
+            
+            <!-- Filtreler -->
+            <div class="bg-white p-4 rounded shadow mb-6">
+                <h2 class="text-xl font-semibold mb-2">Filtreleme Seçenekleri</h2>
+                <form id="filter-form">
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        <div>
+                            <label class="block text-sm mb-1">Emlak Tipi</label>
+                            <select id="property-type" class="w-full p-2 border">
+                                <option>Tüm Türler</option>
+                                <option>Daire</option>
+                                <option>Villa</option>
+                                <option>Müstakil Ev</option>
+                                <option>Arsa</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">Bölge</label>
+                            <select id="location" class="w-full p-2 border">
+                                <option>Tüm Bölgeler</option>
+                                <option>Kaş Merkez</option>
+                                <option>Kalkan</option>
+                                <option>Çukurbağ</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">Fiyat Aralığı</label>
+                            <select id="price-range" class="w-full p-2 border">
+                                <option>Tüm Fiyatlar</option>
+                                <option>0 - 500.000 ₺</option>
+                                <option>500.000 - 1.000.000 ₺</option>
+                                <option>1.000.000 - 2.500.000 ₺</option>
+                                <option>2.500.000 ₺ ve üzeri</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">Oda Sayısı</label>
+                            <select id="rooms" class="w-full p-2 border">
+                                <option>Tümü</option>
+                                <option>1+1</option>
+                                <option>2+1</option>
+                                <option>3+1</option>
+                                <option>4+1 ve üzeri</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors">Filtrele</button>
+                </form>
+            </div>
+            
+            <!-- Emlak Listesi -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded shadow transition-transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400?text=Villa" alt="Villa" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Satılık</span>
+                        <h3 class="text-xl font-semibold my-2">Deniz Manzaralı Villa</h3>
+                        <p class="text-gray-600 mb-2">Kalkan, Antalya</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">₺3,750,000</span>
+                            <a href="property-detail.html" class="text-blue-600">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded shadow transition-transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400?text=Daire" alt="Daire" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Kiralık</span>
+                        <h3 class="text-xl font-semibold my-2">Modern 2+1 Daire</h3>
+                        <p class="text-gray-600 mb-2">Kaş Merkez, Antalya</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">₺12,000/ay</span>
+                            <a href="property-detail.html" class="text-blue-600">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded shadow transition-transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400?text=Arsa" alt="Arsa" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">Satılık</span>
+                        <h3 class="text-xl font-semibold my-2">Deniz Manzaralı Arsa</h3>
+                        <p class="text-gray-600 mb-2">Çukurbağ, Kaş</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold">₺1,250,000</span>
+                            <a href="property-detail.html" class="text-blue-600">Detaylar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sayfalama -->
+            <div class="flex justify-center mt-8">
+                <div class="inline-flex">
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-white">Önceki</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-blue-600 text-white">1</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-white">2</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-white">3</a>
+                    <a href="#" class="px-4 py-2 border border-gray-300 bg-white">Sonraki</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <p class="text-center">&copy; 2025 Remax Pupa Emlak. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

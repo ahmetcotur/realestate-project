@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - Remax Pupa Emlak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="font-bold text-xl">Remax Pupa Emlak</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html">Ana Sayfa</a>
+                <a href="properties.html">Emlaklar</a>
+                <a href="agents.html">Danışmanlar</a>
+                <a href="about.html" class="text-blue-600 font-medium">Hakkımızda</a>
+                <a href="contact.html">İletişim</a>
+            </nav>
+            
+            <!-- Mobil Menü Butonu -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobil Menü -->
+        <div id="mobile-menu" class="hidden md:hidden px-4 py-2 bg-white border-t">
+            <a href="index.html" class="block py-2">Ana Sayfa</a>
+            <a href="properties.html" class="block py-2">Emlaklar</a>
+            <a href="agents.html" class="block py-2">Danışmanlar</a>
+            <a href="about.html" class="block py-2 text-blue-600 font-medium">Hakkımızda</a>
+            <a href="contact.html" class="block py-2">İletişim</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container mx-auto px-4 py-8">
+            <!-- Hero Bölümü -->
+            <div class="relative">
+                <img src="https://placehold.co/1200x400?text=Remax+Pupa+Emlak" alt="Remax Pupa Emlak" class="w-full h-96 object-cover rounded-lg">
+                <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center rounded-lg">
+                    <div class="px-8 md:px-16">
+                        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-on-scroll">Hakkımızda</h1>
+                        <p class="text-xl text-white max-w-2xl animate-on-scroll">Kaş ve Kalkan bölgesinde 15 yılı aşkın tecrübemizle müşterilerimize en iyi gayrimenkul danışmanlık hizmetini sunuyoruz.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hikayemiz -->
+            <div class="my-12">
+                <h2 class="text-3xl font-bold mb-6 text-center animate-on-scroll">Hikayemiz</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex flex-col md:flex-row items-center mb-6">
+                        <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6">
+                            <img src="https://placehold.co/600x400?text=Ofis+Görselimiz" alt="Remax Pupa Emlak Ofisi" class="rounded-lg shadow-md animate-on-scroll">
+                        </div>
+                        <div class="md:w-2/3">
+                            <p class="text-lg mb-4 animate-on-scroll">Remax Pupa Emlak, 2010 yılında Kaş'ta kurulmuş, bölgenin lider gayrimenkul danışmanlık şirketlerinden biridir. Kuruluşumuzdan bu yana, Kaş ve Kalkan bölgesindeki gayrimenkul pazarında müşterilerimize en yüksek kalitede hizmet sunmak için çalışıyoruz.</p>
+                            <p class="text-lg mb-4 animate-on-scroll">Remax global ağının bir parçası olarak, uluslararası standartlarda hizmet vermekte ve geniş bir müşteri ağına erişim sağlamaktayız. Yerel pazarı en iyi şekilde analiz eden uzman ekibimiz, müşterilerimizin beklentilerini en iyi şekilde karşılamak için çalışmaktadır.</p>
+                        </div>
+                    </div>
+                    <p class="text-lg animate-on-scroll">Bugün, birçok mutlu müşterinin hayallerindeki eve kavuşmasına yardımcı olmanın gururunu yaşıyoruz. Her geçen gün büyüyen danışman kadromuz ve artan müşteri memnuniyetimiz ile sektörde fark yaratmaya devam ediyoruz.</p>
+                </div>
+            </div>
+            
+            <!-- Değerlerimiz -->
+            <div class="my-12 bg-white p-8 rounded-lg shadow">
+                <h2 class="text-3xl font-bold mb-8 text-center">Değerlerimiz</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center animate-on-scroll">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Güven</h3>
+                        <p class="text-gray-600">Müşterilerimizle kurduğumuz ilişkilerde şeffaflık ve dürüstlük en önemli değerlerimizdendir. Güvene dayalı uzun vadeli ilişkiler kurarız.</p>
+                    </div>
+                    
+                    <div class="text-center animate-on-scroll">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Yenilikçilik</h3>
+                        <p class="text-gray-600">Sektördeki en son yenilikleri ve teknolojiyi takip ederek, müşterilerimize en iyi ve en güncel hizmeti sunmak için sürekli kendimizi geliştiriyoruz.</p>
+                    </div>
+                    
+                    <div class="text-center animate-on-scroll">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Müşteri Odaklılık</h3>
+                        <p class="text-gray-600">Her müşterimizin ihtiyaçları ve beklentileri farklıdır. Bu nedenle, her müşterimize özel çözümler sunar ve beklentilerini aşmaya çalışırız.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Neden Bizi Seçmelisiniz -->
+            <div class="my-12">
+                <h2 class="text-3xl font-bold mb-8 text-center animate-on-scroll">Neden Bizi Seçmelisiniz</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded shadow animate-on-scroll">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Uzman Kadro</h3>
+                                <p class="text-gray-600">Deneyimli ve profesyonel danışmanlarımız, bölge pazarını en iyi şekilde analiz eder ve müşterilerimize en doğru bilgileri sunar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded shadow animate-on-scroll">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2a2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h.5A2.5 2.5 0 0020 5.5v-1.65" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Geniş Portföy</h3>
+                                <p class="text-gray-600">Kaş ve Kalkan bölgesinde geniş bir emlak portföyüne sahibiz. Her bütçeye ve ihtiyaca uygun seçeneklerimiz mevcuttur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded shadow animate-on-scroll">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Uluslararası Ağ</h3>
+                                <p class="text-gray-600">Remax global ağının bir parçası olarak, dünya genelinde geniş bir müşteri kitlesine erişim sağlıyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded shadow animate-on-scroll">
+                        <div class="flex items-start">
+                            <div class="mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Hızlı ve Etkili Hizmet</h3>
+                                <p class="text-gray-600">Emlak alım-satım süreçlerini hızlı ve sorunsuz bir şekilde yönetir, müşterilerimizin zamanını değerli kılarız.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- İstatistikler -->
+            <div class="my-12 py-12 bg-blue-600 text-white rounded-lg">
+                <h2 class="text-3xl font-bold mb-8 text-center">Rakamlarla Biz</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center max-w-5xl mx-auto">
+                    <div>
+                        <div class="text-4xl font-bold mb-2">15+</div>
+                        <p>Yıllık Tecrübe</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">500+</div>
+                        <p>Satılan Emlak</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">300+</div>
+                        <p>Kiralanan Emlak</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold mb-2">1000+</div>
+                        <p>Mutlu Müşteri</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Ekibimiz CTA -->
+            <div class="my-12 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ekibimizle Tanışın</h2>
+                <p class="text-lg mb-6 max-w-2xl mx-auto">Profesyonel gayrimenkul danışmanlarımız, sizin için en uygun emlağı bulmanıza yardımcı olmak için hazır. Hemen iletişime geçin!</p>
+                <a href="agents.html" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition-colors inline-block">Danışmanlarımız</a>
+            </div>
+        </div>
+            <!-- CTA Bölümü -->
+        <div class="bg-blue-600 py-16 mt-12">
+            <div class="container mx-auto px-4">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-white mb-6 animate-on-scroll">Gayrimenkul Yolculuğunuza Bizimle Başlayın</h2>
+                    <p class="text-white text-lg mb-8 max-w-3xl mx-auto animate-on-scroll">Kaş ve Kalkan'daki emlak fırsatları hakkında daha fazla bilgi almak veya profesyonel danışmanlarımızla görüşmek için bugün bize ulaşın.</p>
+                    <div class="animate-on-scroll">
+                        <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium inline-block hover:bg-blue-100 transition-colors">Bizimle İletişime Geçin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <p class="text-center">&copy; 2025 Remax Pupa Emlak. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
